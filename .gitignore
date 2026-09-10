@@ -1,0 +1,94 @@
+# ─── Flutter / Dart ───────────────────────────────────────────────
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+*.dart.js
+*.info.json
+*.js.deps
+*.js.map
+doc/api/
+coverage/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+
+# Generated Dart sources (regenerate with build_runner)
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+*.config.dart
+
+# Keep pubspec.lock committed for applications.
+# If this project is ever converted to a library, uncomment the next line.
+# pubspec.lock
+
+# ─── Machine-specific SDK paths ───────────────────────────────────
+local.properties
+android/local.properties
+
+# ─── Android / Java / Gradle ──────────────────────────────────────
+.gradle/
+android/.gradle/
+android/build/
+android/app/build/
+android/captures/
+android/.cxx/
+*.class
+*.war
+*.ear
+*.jar.tmp
+*.hprof
+
+# Signing material — never commit
+*.jks
+*.keystore
+key.properties
+android/key.properties
+
+# NOTE: android/gradle/wrapper/gradle-wrapper.jar and android/local_maven/
+# are intentionally tracked — they are vendored, not build output.
+!android/gradle/wrapper/gradle-wrapper.jar
+!android/local_maven/**
+
+# ─── iOS / macOS ──────────────────────────────────────────────────
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework/
+ios/Flutter/ephemeral/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+macos/Pods/
+macos/Flutter/ephemeral/
+*.ipa
+*.dSYM.zip
+
+# ─── Web / Linux / Windows ────────────────────────────────────────
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+
+# ─── IDE / editor ─────────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*~
+
+# ─── OS noise ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Misc ─────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.log
+*.tmp
