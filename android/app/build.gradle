@@ -4,30 +4,27 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
-    // Must come after the Android and Kotlin plugins.
-    id "dev.flutter.flutter-gradle-plugin"
-}
-
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file("local.properties")
 if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader("UTF-8") { reader -> localProperties.load(reader) }
+    localPropertiesFile.withReader("UTF-8") { reader ->
+        localProperties.load(reader)
+    }
 }
 
-def flutterVersionCode = localProperties.getProperty("flutter.versionCode") ?: "1"
-def flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "1.0.0"
-
-
-def keystoreProperties = new Properties()
-def keystorePropertiesFile = rootProject.file('key.properties')
-if (keystorePropertiesFile.exists()) {
-    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+def flutterVersionCode = localProperties.getProperty("flutter.versionCode")
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
 }
+
+def flutterVersionName = localProperties.getProperty("flutter.versionName")
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
 android {
     namespace "com.aura.aura_assistant"
     compileSdk 34
-
-    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
@@ -38,18 +35,12 @@ android {
         jvmTarget = JavaVersion.VERSION_11
     }
 
-    sourceSets {
-        main.java.srcDirs += "src/main/kotlin"
-    }
-
     defaultConfig {
         applicationId "com.aura.aura_assistant"
         minSdk 24
         targetSdk 34
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-        coreLibraryDesugaringEnabled true
-
     }
 
     buildTypes {
@@ -60,9 +51,5 @@ android {
 }
 
 flutter {
-    source = "../.."
+    source '../..'
 }
-dependencies {
-    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
-}
-
