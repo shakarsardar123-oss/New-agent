@@ -1,14 +1,21 @@
 workflows:
   android-workflow:
-    name: Android Workflow
+    name: Android Release Workflow
+    max_build_duration: 30
+    instance_type: mac_mini_m1
     environment:
       flutter: stable
       android_signing:
         - reference_key
     scripts:
+      - name: Set up local.properties
+        script: |
+          echo "flutter.sdk=$FLUTTER_ROOT" > android/local.properties
       - name: Get Flutter packages
-        script: flutter pub get
-      - name: Build App Bundle
-        script: flutter build appbundle --release
+        script: |
+          flutter pub get
+      - name: Build Android App Bundle
+        script: |
+          flutter build appbundle --release
     artifacts:
       - build/app/outputs/bundle/release/*.aab
