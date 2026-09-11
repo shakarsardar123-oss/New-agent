@@ -5,7 +5,7 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - name: Get Flutter packages
+      - name: Install Flutter dependencies
         script: |
           flutter pub get
       - name: Build Android App
