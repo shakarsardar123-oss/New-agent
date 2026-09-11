@@ -28,6 +28,10 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
+      - name: Force replace placeholder in all downloaded gradle files
+        run: |
+          find . -type f -name "build.gradle" -exec sed -i "s/<latest-version>/1.8.22/g" {} +
+
       - name: Build Release APK
         run: flutter build apk --release
 
