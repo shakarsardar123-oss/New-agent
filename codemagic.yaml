@@ -4,9 +4,6 @@ workflows:
     max_build_duration: 120
     environment:
       flutter: stable
-      kotlin: "1.9.24"
-      android_signing:
-        - release_signing_config
     scripts:
       - name: Build Android App
         script: |
