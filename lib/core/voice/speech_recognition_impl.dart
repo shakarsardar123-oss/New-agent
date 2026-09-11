@@ -1,7 +1,7 @@
-import 'package:speech_to_text/speech_to_text.dart' as stt;
+import 'package:speech_to_text/speech_to_text.dart';
 
 class SpeechRecognitionImpl {
-  final stt.SpeechToText _speech = stt.SpeechToText();
+  final SpeechToText _speech = SpeechToText();
 
   Future<bool> initialize() async {
     return await _speech.initialize();
@@ -10,7 +10,6 @@ class SpeechRecognitionImpl {
   void listen({required Function(String) onResult}) {
     _speech.listen(
       onResult: (val) => onResult(val.recognizedWords),
-      listenMode: stt.ListenMode.confirmation,
     );
   }
 
