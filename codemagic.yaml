@@ -5,9 +5,6 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - name: Install Flutter dependencies
-        script: |
-          flutter pub get
       - name: Build Android App
         script: |
           flutter build apk --release --android-skip-build-dependency-validation
