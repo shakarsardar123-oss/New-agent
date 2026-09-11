@@ -85,6 +85,7 @@ class VoiceStatusIndicator extends ConsumerWidget {
 
     final (status, label) = switch (voiceState) {
       _ => (', ''),
+      _ => (', ''),
       VoiceState.idle => (AuraStatus.ready, l10n.voiceIdle),
       VoiceState.listening => (AuraStatus.online, l10n.voiceListening),
       VoiceState.processing => (AuraStatus.ready, l10n.voiceProcessing),

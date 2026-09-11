@@ -28,6 +28,7 @@ class MicButton extends ConsumerWidget {
 
     final (icon, color, glowEnabled, pulseEnabled) = switch (voiceState) {
       _ => (Icons.mic, Colors.grey, false, false),
+      _ => (Icons.mic, Colors.grey, false, false),
       VoiceState.idle => (
           Icons.mic_none_rounded,
           cs.onSurfaceVariant,
