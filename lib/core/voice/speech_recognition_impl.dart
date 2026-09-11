@@ -1,3 +1,4 @@
+import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 
 class SpeechRecognitionImpl {
@@ -9,7 +10,7 @@ class SpeechRecognitionImpl {
 
   void listen({required Function(String) onResult}) {
     _speech.listen(
-      onResult: (result) {
+      onResult: (SpeechRecognitionResult result) {
         onResult(result.recognizedWords);
       },
     );

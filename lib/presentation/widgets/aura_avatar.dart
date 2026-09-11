@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class AuraAvatar extends LeafRenderObjectWidget {
   const AuraAvatar({super.key});
@@ -8,4 +7,7 @@ class AuraAvatar extends LeafRenderObjectWidget {
   RenderBox createRenderObject(BuildContext context) {
     return RenderProxyBox();
   }
+
+  @override
+  void updateRenderObject(BuildContext context, RenderProxyBox renderObject) {}
 }
