@@ -1,12 +1,14 @@
 workflows:
-  default-workflow:
-    name: Default Workflow
-    max_build_duration: 120
+  android-workflow:
+    name: Android Workflow
     environment:
       flutter: stable
+      android_signing:
+        - reference_key
     scripts:
-      - name: Build Android App
-        script: |
-          flutter build apk --release --android-skip-build-dependency-validation
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Build App Bundle
+        script: flutter build appbundle --release
     artifacts:
-      - build/**/outputs/**/*.apk
+      - build/app/outputs/bundle/release/*.aab
