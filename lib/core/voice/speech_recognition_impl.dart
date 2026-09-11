@@ -9,7 +9,9 @@ class SpeechRecognitionImpl {
 
   void listen({required Function(String) onResult}) {
     _speech.listen(
-      onResult: (val) => onResult(val.recognizedWords),
+      onResult: (result) {
+        onResult(result.recognizedWords);
+      },
     );
   }
 
