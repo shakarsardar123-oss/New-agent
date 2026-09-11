@@ -28,7 +28,7 @@ class ReactionPixelArtRenderer extends StatelessWidget {
     0 => Colors.transparent,
     1 => AppColors.cyan,
     2 => AppColors.background, // dark accent
-    _ => AppColors.cyan.withValues(alpha: 0.5),
+    _ => AppColors.cyan.withOpacity(0.5),
   };
 
   @override
@@ -52,7 +52,7 @@ class ReactionPixelArtRenderer extends StatelessWidget {
         ),
         if (label != null && label!.isNotEmpty) ...[
           const SizedBox(height: 4),
-          Text(label!, style: TextStyle(fontSize: 11, color: AppColors.cyan.withValues(alpha: 0.7), fontFamily: 'monospace'), textDirection: Directionality.of(context), textAlign: TextAlign.center),
+          Text(label!, style: TextStyle(fontSize: 11, color: AppColors.cyan.withOpacity(0.7), fontFamily: 'monospace'), textDirection: Directionality.of(context), textAlign: TextAlign.center),
         ],
       ],
     );

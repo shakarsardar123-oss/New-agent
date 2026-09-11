@@ -41,7 +41,7 @@ class ReactionEmojiRenderer extends StatelessWidget {
             label!,
             style: TextStyle(
               fontSize: 13,
-              color: AppColors.cyan.withValues(alpha: 0.9),
+              color: AppColors.cyan.withOpacity(0.9),
               fontWeight: FontWeight.w500,
             ),
             textDirection: textDirection,
