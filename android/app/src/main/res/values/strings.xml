@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">AURA Assistant</string>
-    <!-- Flutter engine cache ID used by AuraQuickSettingsTileService.
-         Must match the engine ID registered in MainActivity.
-         Phase 6-B incidental fix: previously referenced but undefined. -->
-    <string name="flutter_engine_id">aura_main_engine</string>
-</resources>
