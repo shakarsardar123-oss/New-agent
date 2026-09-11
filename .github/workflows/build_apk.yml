@@ -28,10 +28,11 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
-      - name: Build APK & App Bundle
-        run: |
-          flutter build apk --release
-          flutter build appbundle --release
+      - name: Build Release APK
+        run: flutter build apk --release
+
+      - name: Build Release App Bundle
+        run: flutter build appbundle --release
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
