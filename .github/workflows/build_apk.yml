@@ -25,12 +25,13 @@ jobs:
           flutter-version: '3.22.0'
           channel: 'stable'
 
-      - name: Fix all build.gradle files recursively
-        run: |
-          grep -rl "<latest-version>" . | xargs -r sed -i "s/<latest-version>/1.8.22/g"
-
       - name: Install Dependencies
         run: flutter pub get
+
+      - name: Fix all Kotlin versions recursively
+        run: |
+          grep -rl "<latest-version>" . | xargs -r sed -i "s/<latest-version>/1.9.20/g" || true
+          grep -rl "1.8.22" . | xargs -r sed -i "s/1.8.22/1.9.20/g" || true
 
       - name: Build Release APK
         run: flutter build apk --release

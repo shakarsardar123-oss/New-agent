@@ -218,7 +218,7 @@ android/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module     
 android/app/build/tmp/kotlin-classes/debug/com/aura/aura_assistant/AlarmWakeActivity$Companion.class          951 class      b02828603a0479911571198b5f195da9d37a1dc9ed1db722b6ee18b8771da5c3
 android/app/build/tmp/kotlin-classes/debug/com/aura/aura_assistant/AlarmWakeActivity.class        2,698 class      7e51e40ec0c81eb0dfe73261328418e995f250094470fbc4b6c4c15f909ed433
 android/app/build/tmp/kotlin-classes/debug/com/aura/aura_assistant/MainActivity.class          586 class      c547620949c41f701bfe7c545b6bd0b6ffe4d8362191f21b91cd063164dbc6fb
-android/app/build/tmp/packJniLibsflutterBuildDebug/MANIFEST.MF                                  25 MF         566ad1a80220026d05099562645ce968ff0e7c36cde22634332605bb34cc3eff
+android/app/build/tmp/packJniLibsflutterBuildDebug/MANIFEST.MF                                  25 MF         566ad1.9.200026d05099562645ce968ff0e7c36cde22634332605bb34cc3eff
 android/app/src/debug/AndroidManifest.xml                                                      206 xml        328b226e78d9b8c914131dd388a60df02cf1bcf0afe208888e4d97f126da2a83
 android/app/src/main/AndroidManifest.xml                                                     3,879 xml        2c19dfb4f698fc586ed3121fe4edf936462b49d5d5aaf1dc9e8c6680b56e3e3d
 android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java                  5,413 java       e6167229a468009b40d20aa8d3ca33b606343259352b970eaa70f6400ac672cc

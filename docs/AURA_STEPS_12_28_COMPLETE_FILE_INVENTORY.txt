@@ -388,7 +388,7 @@ Each file is listed with its relative path, byte size, SHA-256 hash, and source 
 378    outputs    3945           387f906cd34147757d14fbd4d238d70133fcb1eff5be4a6be2c18eed56f20aea   step_22_tests/offline_capability_test.dart
 379    outputs    3553           f3ffedb1afda9e1061188ef3ae9a7ba614ba8889a37b3ac7858fdef65547c786   step_22_tests/step20_confirmation_adapter_test.dart
 380    outputs    3457           e339b5fa7ea242bf718a271cb0228369a79b2cb4ce932e072f8451a7e8c35094   step_22_tests/step20_discovery_adapter_test.dart
-381    outputs    4292           b441119d0861c9fefbea57e2fa31257a5d87e18128a22617730818d9b0e9e243   step_22_tests/step20_gate_adapter_test.dart
+381    outputs    4292           b441119d0861c9fefbea57e2fa31257a5d87e181.9.20617730818d9b0e9e243   step_22_tests/step20_gate_adapter_test.dart
 382    outputs    3888           b12506adc7856fd639785d79abd14138e47ecf92b7ff4d295ec122e03427c50f   step_22_tests/tool_composition_test.dart
 383    outputs    3342           0974b7c3afa08a48d57ba98cb44df2e13f7eee79819829a686381a363803fd5a   step_22_tests/tool_execution_context_test.dart
 384    outputs    2971           8d1c5c66ff5e636904b76dbfa3af43696f6e1d63a83d9808b85103f8293c0282   step_22_tests/tool_execution_metadata_test.dart
