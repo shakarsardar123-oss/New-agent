@@ -35,9 +35,9 @@ class ReactionCustomVisualRenderer extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: AppColors.background.withValues(alpha: 0.6),
+        color: AppColors.background.withOpacity(0.6),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: accent.withValues(alpha: 0.25), width: 1),
+        border: Border.all(color: accent.withOpacity(0.25), width: 1),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

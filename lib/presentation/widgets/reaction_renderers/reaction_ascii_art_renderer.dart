@@ -29,9 +29,9 @@ class ReactionAsciiArtRenderer extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
           decoration: BoxDecoration(
-            color: AppColors.background.withValues(alpha: 0.6),
+            color: AppColors.background.withOpacity(0.6),
             borderRadius: BorderRadius.circular(6),
-            border: Border.all(color: AppColors.cyan.withValues(alpha: 0.2), width: 1),
+            border: Border.all(color: AppColors.cyan.withOpacity(0.2), width: 1),
           ),
           child: Text(
             art,
@@ -47,7 +47,7 @@ class ReactionAsciiArtRenderer extends StatelessWidget {
         ),
         if (label != null && label!.isNotEmpty) ...[
           const SizedBox(height: 4),
-          Text(label!, style: TextStyle(fontSize: 12, color: AppColors.cyan.withValues(alpha: 0.8)), textDirection: textDirection, textAlign: TextAlign.center),
+          Text(label!, style: TextStyle(fontSize: 12, color: AppColors.cyan.withOpacity(0.8)), textDirection: textDirection, textAlign: TextAlign.center),
         ],
       ],
     );

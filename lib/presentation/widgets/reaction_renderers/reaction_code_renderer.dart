@@ -33,9 +33,9 @@ class ReactionCodeRenderer extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           decoration: BoxDecoration(
-            color: AppColors.background.withValues(alpha: 0.8),
+            color: AppColors.background.withOpacity(0.8),
             borderRadius: BorderRadius.circular(6),
-            border: Border.all(color: AppColors.cyan.withValues(alpha: 0.25), width: 1),
+            border: Border.all(color: AppColors.cyan.withOpacity(0.25), width: 1),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -43,9 +43,9 @@ class ReactionCodeRenderer extends StatelessWidget {
             children: [
               if (language != null) Row(
                 children: [
-                  Icon(Icons.code, size: 12, color: AppColors.cyan.withValues(alpha: 0.6)),
+                  Icon(Icons.code, size: 12, color: AppColors.cyan.withOpacity(0.6)),
                   const SizedBox(width: 4),
-                  Text(language!.toUpperCase(), style: TextStyle(fontSize: 9, color: AppColors.cyan.withValues(alpha: 0.5), fontFamily: 'monospace', letterSpacing: 1)),
+                  Text(language!.toUpperCase(), style: TextStyle(fontSize: 9, color: AppColors.cyan.withOpacity(0.5), fontFamily: 'monospace', letterSpacing: 1)),
                 ],
               ),
               const SizedBox(height: 4),
@@ -55,7 +55,7 @@ class ReactionCodeRenderer extends StatelessWidget {
         ),
         if (label != null && label!.isNotEmpty) ...[
           const SizedBox(height: 4),
-          Text(label!, style: TextStyle(fontSize: 12, color: AppColors.cyan.withValues(alpha: 0.7)), textDirection: textDirection, textAlign: TextAlign.center),
+          Text(label!, style: TextStyle(fontSize: 12, color: AppColors.cyan.withOpacity(0.7)), textDirection: textDirection, textAlign: TextAlign.center),
         ],
       ],
     );

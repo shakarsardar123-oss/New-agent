@@ -26,9 +26,9 @@ class ReactionMemeRenderer extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
       decoration: BoxDecoration(
-        color: AppColors.background.withValues(alpha: 0.7),
+        color: AppColors.background.withOpacity(0.7),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: AppColors.cyan.withValues(alpha: 0.3), width: 1),
+        border: Border.all(color: AppColors.cyan.withOpacity(0.3), width: 1),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -36,7 +36,7 @@ class ReactionMemeRenderer extends StatelessWidget {
           Text(topText, style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: Colors.white, letterSpacing: 0.5), textDirection: textDirection, textAlign: TextAlign.center),
           if (bottomText != null && bottomText!.isNotEmpty) ...[
             const SizedBox(height: 4),
-            Text(bottomText!, style: TextStyle(fontSize: 11, color: AppColors.cyan.withValues(alpha: 0.8), fontStyle: FontStyle.italic), textDirection: textDirection, textAlign: TextAlign.center),
+            Text(bottomText!, style: TextStyle(fontSize: 11, color: AppColors.cyan.withOpacity(0.8), fontStyle: FontStyle.italic), textDirection: textDirection, textAlign: TextAlign.center),
           ],
         ],
       ),
