@@ -28,7 +28,7 @@ class AuraNavigationBar extends StatelessWidget {
         color: cs.surface,
         border: Border(
           top: BorderSide(
-            color: cs.outlineVariant.withValues(alpha: 0.3),
+            color: cs.outlineVariant.withOpacity(0.3),
             width: 0.5,
           ),
         ),
@@ -39,7 +39,7 @@ class AuraNavigationBar extends StatelessWidget {
         destinations: destinations,
         height: height,
         backgroundColor: Colors.transparent,
-        indicatorColor: accent.withValues(alpha: 0.12),
+        indicatorColor: accent.withOpacity(0.12),
         labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
       ),
     );

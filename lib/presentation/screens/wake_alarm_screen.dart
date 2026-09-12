@@ -77,9 +77,9 @@ class _WakeAlarmScreenState extends ConsumerState<WakeAlarmScreen>
 
     return Scaffold(
       backgroundColor: isRinging
-          ? cs.errorContainer.withValues(alpha: 0.15)
+          ? cs.errorContainer.withOpacity(0.15)
           : isVerified
-              ? cs.primaryContainer.withValues(alpha: 0.15)
+              ? cs.primaryContainer.withOpacity(0.15)
               : cs.surface,
       body: SafeArea(
         child: Padding(
@@ -191,9 +191,9 @@ class _WakeAlarmScreenState extends ConsumerState<WakeAlarmScreen>
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.12),
+        color: color.withOpacity(0.12),
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: color.withValues(alpha: 0.3)),
+        border: Border.all(color: color.withOpacity(0.3)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -240,7 +240,7 @@ class _WakeAlarmScreenState extends ConsumerState<WakeAlarmScreen>
               child: Container(
                 padding: const EdgeInsets.all(6),
                 decoration: BoxDecoration(
-                  color: Colors.green.withValues(alpha: 0.9),
+                  color: Colors.green.withOpacity(0.9),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(
@@ -285,9 +285,9 @@ class _WakeAlarmScreenState extends ConsumerState<WakeAlarmScreen>
         height: 120,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: cs.error.withValues(alpha: 0.15),
+          color: cs.error.withOpacity(0.15),
           border: Border.all(
-            color: cs.error.withValues(alpha: 0.4),
+            color: cs.error.withOpacity(0.4),
             width: 3,
           ),
         ),

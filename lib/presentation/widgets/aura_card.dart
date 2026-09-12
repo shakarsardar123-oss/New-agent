@@ -56,7 +56,7 @@ class AuraCard extends StatelessWidget {
         boxShadow: showGlow
             ? [
                 BoxShadow(
-                  color: glowColor ?? theme.colorScheme.primary.withValues(alpha: 0.3),
+                  color: glowColor ?? theme.colorScheme.primary.withOpacity(0.3),
                   blurRadius: 20,
                   spreadRadius: 2,
                 ),

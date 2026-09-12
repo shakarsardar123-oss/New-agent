@@ -123,7 +123,7 @@ class _VoiceVisualizerState extends ConsumerState<VoiceVisualizer> with SingleTi
     return Container(
       height: 2,
       decoration: BoxDecoration(
-        color: cs.outline.withValues(alpha: 0.2),
+        color: cs.outline.withOpacity(0.2),
         borderRadius: BorderRadius.circular(1),
       ),
     );
@@ -138,7 +138,7 @@ class _VoiceVisualizerState extends ConsumerState<VoiceVisualizer> with SingleTi
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 4),
           child: _PulsingDot(
-            color: cs.primary.withValues(alpha: 0.5),
+            color: cs.primary.withOpacity(0.5),
             delay: Duration(milliseconds: i * 300),
           ),
         ),

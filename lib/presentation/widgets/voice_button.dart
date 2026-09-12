@@ -43,7 +43,7 @@ class MicButton extends ConsumerWidget {
         ),
       VoiceState.processing => (
           Icons.hourglass_top_rounded,
-          accent.withValues(alpha: 0.7),
+          accent.withOpacity(0.7),
           true,
           false,
         ),
@@ -65,7 +65,7 @@ class MicButton extends ConsumerWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.12),
+        color: color.withOpacity(0.12),
         shape: BoxShape.circle,
       ),
       child: Icon(icon, size: size * 0.4, color: color),
@@ -93,12 +93,12 @@ class MicButton extends ConsumerWidget {
         alignment: Alignment.center,
         children: [
           ExpandingRing(
-            color: accent.withValues(alpha: 0.3),
+            color: accent.withOpacity(0.3),
             maxRadius: size * 0.9,
             duration: const Duration(milliseconds: 2000),
           ),
           ExpandingRing(
-            color: accent.withValues(alpha: 0.2),
+            color: accent.withOpacity(0.2),
             maxRadius: size * 1.2,
             duration: const Duration(milliseconds: 2500),
           ),

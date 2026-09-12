@@ -93,7 +93,7 @@ class _ThemeOption extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
           elevation: isSelected ? 2 : 0,
           borderSide: BorderSide(
-            color: isSelected ? accent : cs.outlineVariant.withValues(alpha: 0.3),
+            color: isSelected ? accent : cs.outlineVariant.withOpacity(0.3),
             width: isSelected ? 2 : 1,
           ),
           child: Column(
@@ -105,14 +105,14 @@ class _ThemeOption extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: previewColor,
                   borderRadius: BorderRadius.circular(6),
-                  border: Border.all(color: cs.outline.withValues(alpha: 0.2)),
+                  border: Border.all(color: cs.outline.withOpacity(0.2)),
                 ),
                 child: Center(
                   child: Container(
                     width: 12,
                     height: 4,
                     decoration: BoxDecoration(
-                      color: accent.withValues(alpha: 0.6),
+                      color: accent.withOpacity(0.6),
                       borderRadius: BorderRadius.circular(2),
                     ),
                   ),

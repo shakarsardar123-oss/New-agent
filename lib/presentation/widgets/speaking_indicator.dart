@@ -92,7 +92,7 @@ class _SpeakingIndicatorState extends State<SpeakingIndicator>
                 width: widget.barWidth,
                 height: widget.barHeight * scale,
                 decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.4 + 0.6 * scale),
+                  color: color.withOpacity(0.4 + 0.6 * scale),
                   borderRadius: BorderRadius.circular(widget.barWidth / 2),
                 ),
               ),
@@ -106,7 +106,7 @@ class _SpeakingIndicatorState extends State<SpeakingIndicator>
             widget.label!,
             style: TextStyle(
               fontSize: 11,
-              color: color.withValues(alpha: 0.7),
+              color: color.withOpacity(0.7),
               fontWeight: FontWeight.w500,
             ),
             textDirection: textDirection,

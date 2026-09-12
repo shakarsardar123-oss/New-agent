@@ -89,7 +89,7 @@ class AppTheme {
       ),
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: AppColors.secondary,
-        indicatorColor: AppColors.primary.withValues(alpha: 0.15),
+        indicatorColor: AppColors.primary.withOpacity(0.15),
         labelTextStyle: WidgetStateProperty.all(
           const TextStyle(fontSize: 11, fontWeight: FontWeight.w600),
         ),
@@ -101,7 +101,7 @@ class AppTheme {
       ),
       chipTheme: ChipThemeData(
         backgroundColor: AppColors.secondary,
-        selectedColor: AppColors.primary.withValues(alpha: 0.2),
+        selectedColor: AppColors.primary.withOpacity(0.2),
         labelStyle: const TextStyle(fontSize: 12, color: AppColors.onCard),
         side: const BorderSide(color: AppColors.border, width: 1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -237,7 +237,7 @@ class AppTheme {
       ),
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: cardColor,
-        indicatorColor: AppColors.primary.withValues(alpha: 0.12),
+        indicatorColor: AppColors.primary.withOpacity(0.12),
         labelTextStyle: WidgetStateProperty.all(
           const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: onBg),
         ),
@@ -249,7 +249,7 @@ class AppTheme {
       ),
       chipTheme: ChipThemeData(
         backgroundColor: secondaryBg,
-        selectedColor: AppColors.primary.withValues(alpha: 0.15),
+        selectedColor: AppColors.primary.withOpacity(0.15),
         labelStyle: const TextStyle(fontSize: 12, color: onCard),
         side: const BorderSide(color: borderColor, width: 1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -386,7 +386,7 @@ class AppTheme {
       ),
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: cardColor,
-        indicatorColor: accent.withValues(alpha: 0.12),
+        indicatorColor: accent.withOpacity(0.12),
         labelTextStyle: WidgetStateProperty.all(
           const TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: onBg),
         ),
@@ -398,7 +398,7 @@ class AppTheme {
       ),
       chipTheme: ChipThemeData(
         backgroundColor: secondaryBg,
-        selectedColor: accent.withValues(alpha: 0.15),
+        selectedColor: accent.withOpacity(0.15),
         labelStyle: const TextStyle(fontSize: 12, color: onCard),
         side: const BorderSide(color: borderColor, width: 1),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),

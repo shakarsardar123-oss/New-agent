@@ -137,7 +137,7 @@ class _ExpandingRingState extends State<ExpandingRing> with SingleTickerProvider
           size: Size(widget.maxRadius * 2, widget.maxRadius * 2),
           painter: _RingPainter(
             radius: radius,
-            color: ringColor.withValues(alpha: opacity * 0.6),
+            color: ringColor.withOpacity(opacity * 0.6),
             strokeWidth: widget.ringWidth,
           ),
         );

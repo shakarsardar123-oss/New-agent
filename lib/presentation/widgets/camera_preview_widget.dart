@@ -67,7 +67,7 @@ class _CameraPreviewWidgetState extends ConsumerState<CameraPreviewWidget> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(Icons.videocam_off, size: 48,
-                color: cs.onSurfaceVariant.withValues(alpha: 0.5)),
+                color: cs.onSurfaceVariant.withOpacity(0.5)),
             const SizedBox(height: 8),
             Text(_error!, style: TextStyle(color: cs.error, fontSize: 12)),
           ],
@@ -88,7 +88,7 @@ class _CameraPreviewWidgetState extends ConsumerState<CameraPreviewWidget> {
             const SizedBox(height: 8),
             Text('Initializing camera...',
                 style: TextStyle(
-                    color: cs.onSurfaceVariant.withValues(alpha: 0.7),
+                    color: cs.onSurfaceVariant.withOpacity(0.7),
                     fontSize: 12)),
           ],
         ),

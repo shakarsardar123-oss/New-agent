@@ -135,7 +135,7 @@ class AuraButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(r),
             boxShadow: [
               BoxShadow(
-                color: glowColor ?? cs.primary.withValues(alpha: 0.4),
+                color: glowColor ?? cs.primary.withOpacity(0.4),
                 blurRadius: 20,
                 spreadRadius: 2,
               ),
@@ -195,7 +195,7 @@ class AuraIconButton extends StatelessWidget {
       width: size,
       height: size,
       child: Material(
-        color: backgroundColor ?? cs.surfaceContainerHighest.withValues(alpha: 0.5),
+        color: backgroundColor ?? cs.surfaceContainerHighest.withOpacity(0.5),
         borderRadius: BorderRadius.circular(size / 2),
         child: InkWell(
           onTap: onPressed,

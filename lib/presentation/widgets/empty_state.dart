@@ -34,7 +34,7 @@ class EmptyState extends StatelessWidget {
             Icon(
               icon,
               size: 64,
-              color: cs.outline.withValues(alpha: 0.5),
+              color: cs.outline.withOpacity(0.5),
             ),
           if (icon != null) SizedBox(height: 16),
           if (title != null)

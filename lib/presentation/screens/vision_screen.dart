@@ -370,7 +370,7 @@ class _VisionScreenState extends ConsumerState<VisionScreen> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
               decoration: BoxDecoration(
-                color: AuraColors.accentOf(context).withValues(alpha: 0.15),
+                color: AuraColors.accentOf(context).withOpacity(0.15),
                 borderRadius: BorderRadius.circular(AppRadius.pill),
               ),
               child: Row(
@@ -408,7 +408,7 @@ class _VisionScreenState extends ConsumerState<VisionScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(Icons.videocam_off_outlined, size: 56,
-                color: cs.onSurfaceVariant.withValues(alpha: 0.5)),
+                color: cs.onSurfaceVariant.withOpacity(0.5)),
             SizedBox(height: 12),
             Text(
               _cameraError == 'permission_denied'
@@ -437,7 +437,7 @@ class _VisionScreenState extends ConsumerState<VisionScreen> {
             Text(
               S.of(context).visionInitializing,
               style: TextStyle(
-                color: cs.onSurfaceVariant.withValues(alpha: 0.7),
+                color: cs.onSurfaceVariant.withOpacity(0.7),
                 fontSize: 13,
               ),
             ),
@@ -496,7 +496,7 @@ class _VisionScreenState extends ConsumerState<VisionScreen> {
         // Analyzing indicator
         if (_screenState == VisionScreenState.analyzing)
           Container(
-            color: Colors.black.withValues(alpha: 0.35),
+            color: Colors.black.withOpacity(0.35),
             child: Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -532,7 +532,7 @@ class _VisionScreenState extends ConsumerState<VisionScreen> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
-                color: Colors.black.withValues(alpha: 0.6),
+                color: Colors.black.withOpacity(0.6),
                 borderRadius: BorderRadius.circular(AppRadius.sm),
               ),
               child: Text(
@@ -683,7 +683,7 @@ class _VisionScreenState extends ConsumerState<VisionScreen> {
       ),
       child: AuraCard(
         padding: const EdgeInsets.all(AppSpacing.md),
-        color: cs.errorContainer.withValues(alpha: 0.5),
+        color: cs.errorContainer.withOpacity(0.5),
         child: Row(
           children: [
             Icon(Icons.error_outline_rounded, color: cs.error, size: 20),
@@ -821,11 +821,11 @@ class _ModeChip extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
           color: selected
-              ? accent.withValues(alpha: 0.18)
+              ? accent.withOpacity(0.18)
               : cs.surfaceContainerLow,
           borderRadius: BorderRadius.circular(AppRadius.xl),
           border: selected
-              ? Border.all(color: accent.withValues(alpha: 0.5), width: 1.5)
+              ? Border.all(color: accent.withOpacity(0.5), width: 1.5)
               : null,
         ),
         child: Row(
@@ -881,7 +881,7 @@ class _ControlButton extends StatelessWidget {
             width: 36,
             height: 36,
             decoration: BoxDecoration(
-              color: (iconColor ?? cs.onSurfaceVariant).withValues(alpha: 0.12),
+              color: (iconColor ?? cs.onSurfaceVariant).withOpacity(0.12),
               shape: BoxShape.circle,
             ),
             child: IconButton(
@@ -932,17 +932,17 @@ class _CaptureButton extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: isAnalyzing
-              ? accent.withValues(alpha: 0.3)
-              : accent.withValues(alpha: 0.9),
+              ? accent.withOpacity(0.3)
+              : accent.withOpacity(0.9),
           border: Border.all(
-            color: Colors.white.withValues(alpha: 0.7),
+            color: Colors.white.withOpacity(0.7),
             width: 3,
           ),
           boxShadow: isAnalyzing
               ? []
               : [
                   BoxShadow(
-                    color: accent.withValues(alpha: 0.4),
+                    color: accent.withOpacity(0.4),
                     blurRadius: 12,
                     spreadRadius: 2,
                   ),
@@ -954,7 +954,7 @@ class _CaptureButton extends StatelessWidget {
                 height: 24,
                 child: CircularProgressIndicator(
                   strokeWidth: 2.5,
-                  color: Colors.white.withValues(alpha: 0.9),
+                  color: Colors.white.withOpacity(0.9),
                 ),
               )
             : Icon(

@@ -35,7 +35,7 @@ class FoundationScreen extends ConsumerWidget {
             Text(
               'Assistant',
               style: AppTextStyles.subtitle1.copyWith(
-                color: AppColors.onBackground.withValues(alpha: 0.6),
+                color: AppColors.onBackground.withOpacity(0.6),
               ),
               textDirection: TextDirection.ltr,
             ),
@@ -50,7 +50,7 @@ class FoundationScreen extends ConsumerWidget {
             Text(
               'Phase 1 · Foundation Ready',
               style: AppTextStyles.caption.copyWith(
-                color: AppColors.onBackground.withValues(alpha: 0.4),
+                color: AppColors.onBackground.withOpacity(0.4),
               ),
               textDirection: TextDirection.ltr,
             ),
@@ -81,7 +81,7 @@ class _StatusChip extends StatelessWidget {
           Text(
             label,
             style: AppTextStyles.body2.copyWith(
-              color: AppColors.onBackground.withValues(alpha: 0.5),
+              color: AppColors.onBackground.withOpacity(0.5),
             ),
           ),
           const SizedBox(width: 12),

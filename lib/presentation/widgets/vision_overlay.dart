@@ -97,7 +97,7 @@ class VisionOverlay extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
         decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.75),
+          color: color.withOpacity(0.75),
           borderRadius: BorderRadius.circular(4),
         ),
         child: Text(
@@ -147,7 +147,7 @@ class _OverlayPainter extends CustomPainter {
       ..isAntiAlias = true;
 
     final fillPaint = Paint()
-      ..color = color.withValues(alpha: box.fillOpacity)
+      ..color = color.withOpacity(box.fillOpacity)
       ..style = PaintingStyle.fill
       ..isAntiAlias = true;
 

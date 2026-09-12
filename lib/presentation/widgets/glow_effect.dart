@@ -81,7 +81,7 @@ class _GlowEffectState extends State<GlowEffect> with SingleTickerProviderStateM
                 : null,
             boxShadow: [
               BoxShadow(
-                color: glowColor.withValues(alpha: _animation.value),
+                color: glowColor.withOpacity(_animation.value),
                 blurRadius: widget.glowRadius,
                 spreadRadius: widget.spread,
               ),

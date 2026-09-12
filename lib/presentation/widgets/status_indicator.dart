@@ -48,7 +48,7 @@ class StatusIndicator extends StatelessWidget {
               boxShadow: status == AuraStatus.online
                   ? [
                       BoxShadow(
-                        color: dotColor.withValues(alpha: 0.4),
+                        color: dotColor.withOpacity(0.4),
                         blurRadius: 6,
                         spreadRadius: 1,
                       ),
